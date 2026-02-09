@@ -53,6 +53,11 @@ body.dark {
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Arial, sans-serif;
   color: var(--color-text);

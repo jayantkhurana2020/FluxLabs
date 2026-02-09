@@ -1,0 +1,118 @@
+@charset "UTF-8";
+.signUp-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 0;
+}
+.signUp-page .signUp-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  background: var(--color-primary);
+  min-width: 500px;
+  max-width: 500px;
+  min-height: 410px;
+  max-height: 410px;
+  border-radius: 5%;
+  box-shadow: 0px 0px 20px 20px var(--color-shadow-light);
+}
+.signUp-page .signUp-hero h1 {
+  font-size: 2.3rem;
+  margin-bottom: 12px;
+}
+.signUp-page .signUp-hero .signUp-container {
+  padding: 0;
+  width: 100%;
+}
+.signUp-page .signUp-hero .signUp-container #form-wizard .form-step {
+  display: none;
+}
+.signUp-page .signUp-hero .signUp-container #form-wizard .form-step .form-group input {
+  border: 1px solid #ccc;
+}
+.signUp-page .signUp-hero .signUp-container #form-wizard .form-step .form-group .error-msg {
+  display: none;
+  font-size: 0.8rem;
+  color: #ef4444;
+  margin-top: 4px;
+}
+.signUp-page .signUp-hero .signUp-container #form-wizard .form-step .form-group.error input {
+  border-color: #ef4444;
+}
+.signUp-page .signUp-hero .signUp-container #form-wizard .form-step .form-group.error .error-msg {
+  display: block;
+}
+.signUp-page .signUp-hero .signUp-container #form-wizard .form-step.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+.signUp-page .signUp-hero .signUp-container #form-wizard .form-step.active input {
+  display: block;
+  min-height: 30px;
+  width: 100%;
+  padding: 12px;
+}
+.signUp-page .signUp-hero .signUp-container #form-wizard .form-step.active button {
+  display: block;
+  min-height: 25px;
+  width: 30%;
+  padding: 12px;
+  font-size: 0.95rem;
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+}
+.signUp-page .signUp-hero .signUp-container #form-wizard .form-step.active button:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+.signUp-page .signUp-hero .signUp-container #form-wizard .form-step.active .btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ===============================
+   Mobile (≤ 600px)
+================================ */
+@media (max-width: 600px) {
+  .signUp-page .signUp-hero {
+    min-width: 70%;
+    max-width: 100%;
+    padding: 28px;
+    border-radius: 16px;
+  }
+  .signUp-page .signUp-hero h1 {
+    font-size: 1.8rem;
+  }
+  .signUp-page .form-step.active h2 {
+    font-size: 1.2rem;
+  }
+  .signUp-page .form-step.active input {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .signUp-page .form-step.active button {
+    width: 100%;
+  }
+}
+/* ===============================
+   Small phones (≤ 400px)
+================================ */
+@media (max-width: 400px) {
+  .signUp-page .signUp-hero {
+    padding: 22px;
+  }
+  .signUp-page .signUp-hero h1 {
+    font-size: 1.6rem;
+  }
+  .signUp-page .form-step.active h2 {
+    font-size: 1.1rem;
+  }
+  .signUp-page .form-step.active input {
+    font-size: 0.85rem;
+  }
+}/*# sourceMappingURL=signUp.css.map */

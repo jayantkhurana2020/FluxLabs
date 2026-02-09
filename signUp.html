@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FluxLabs - Sign Up</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/signUp.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+</head>
+<body>
+    <!-- loader  -->
+    <div id="page-loader">
+        <div class="loader-inner">
+            <span class="loader-logo">Flux<span>Labs</span></span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Flux<span>Labs</span></a>
+
+            <nav class="nav-links">
+                <!-- <button class="btn btn-primary nav-btn-mob" onclick="window.location.href='signUp.html'">Get Started</button> -->
+                
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="products.html" class="nav-item ">Products</a>
+                <a href="about.html" class="nav-item ">About</a>
+                <a href="contact.html" class="nav-item ">Contact</a>
+            </nav>
+            <div class="nav-links-right">
+
+                <!-- <button type="button" class="btn btn-primary nav-btn" onclick="window.location.href='signUp.html'">Get Started</button> -->
+                <button type="button" id="themeToggle" aria-pressed="false">Dark</button>
+    
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="signUp-page">
+
+        <section class="signUp-hero">
+            <h1>Sign Up</h1>
+            <div class="container signUp-container">
+                <form id="form-wizard">
+
+                    <!-- step 1 -->
+                    <div class="form-step">
+
+                        <h2>Step-1 Personal details</h2>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="First Name" id="firstName" required>
+                            <small class="error-msg"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="Last Name" id="lastName" required>
+                            <small class="error-msg"></small>
+                        </div>
+
+                        <div class="btns">
+                            <button type="button" class="btn next-btn">Next</button>
+                        </div>
+                    </div>
+                    <div class="form-step ">
+
+                        <h2>Step-2 Contact Info</h2>
+
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" id="email" required>
+                            <small class="error-msg"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone No." id="phone" required>
+                            <small class="error-msg"></small>
+                        </div>
+
+                        <div class="btns">
+                            <button type="button" class="btn back-btn">Back</button>
+                            <button type="button" class="btn next-btn">Next</button>
+                        </div>
+                    </div>
+                    <div class="form-step">
+
+                        <h2>Step-3 Account setup</h2>
+
+                        <div class="form-group">
+                            <input type="password" placeholder="Password" id="password" required>
+                            <small class="error-msg"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" placeholder="Confirm Password" id="confirmPassword" required>
+                            <small class="error-msg"></small>
+                        </div>
+
+                        <div class="btns">
+                            <button type="button" class="btn back-btn">Back</button>
+                            <button type="button" class="btn submit-btn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- progress bar -->
+                <div class="progress-bar">
+                    <div class="progress" id="progress">
+                        
+                        <div class="progress-step progress-step-btn" data-step = '0'></div>
+                        <div class="progress-step progress-step-btn" data-step = '1'></div>
+                        <div class="progress-step progress-step-btn" data-step = '2'></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer class="footer">
+        <div class=" container footer-container">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">Flux<span>Labs</span></a>
+                <p class="footer-dec">Building modern, scalable tools to help teams move faster and work smarter.</p>
+            </div>
+
+            <div class="footer-links">
+                
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#">Features</a>
+                    <a href="products.html">Pricing</a>
+                    <a href="#">Integrations</a>
+                    <a href="#">Updates</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="about.html">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Security</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <span>© 2026 FluxLabs. All rights reserved.</span>
+                <span>Made with care.</span>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/signUp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
